@@ -30,6 +30,3 @@ app.post("/extract", async (req, res) => {
 });
 
 app.listen(3000, () => console.log("PDF worker running"));
-git add index.js
-git commit -m "Fix pdf-parse export shape"
-git push
