@@ -1,6 +1,7 @@
 {
   "name": "pdf-worker",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "index.js",
 
@@ -12,7 +13,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "@supabase/supabase-js": "^2.90.1",
     "express": "^5.2.1",
