@@ -1,12 +1,12 @@
 import express from "express";
-import pdf from "pdf-parse";
+import * as pdf from "pdf-parse";   // 👈 FIXED
 
 const app = express();
 app.use(express.raw({ type: "*/*", limit: "50mb" }));
 
 app.post("/extract", async (req, res) => {
   try {
-    const data = await pdf(req.body);
+    const data = await pdf.default(req.body);  // 👈 FIXED
     res.json({ text: data.text });
   } catch (e) {
     console.error(e);
